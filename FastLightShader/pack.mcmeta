@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": "FastLight - ultra optimized lighting shader (OptiFine + Iris/Sodium). No shadows, no post: zero FPS loss."
+  }
+}

@@ -1,11 +1,17 @@
 #version 120
 
 // ============================================================
-//  FastLight - terrain.vsh
+//  FastLight - terrain.vsh   (overworld: solid / cutout / plants)
+//
 //  Pure pass-through of vanilla geometry + light attributes.
 //  Extra work per vertex: ONE vec3 copy (view-space position).
 //  No wave displacement here -> zero risk of popping / z-fight;
-//  water motion is done as fragment normal perturbation instead.
+//  water motion is done as a fragment normal perturbation instead.
+//
+//  NOTE on matrices: at_tmc0 is already in MODEL-VIEW space, so
+//  only the projection matrix is needed here (gl_projectionMatrix
+//  is the Iris/Sodium name for the classic GL built-in; OptiFine's
+//  preprocessor maps it to gl_ProjectionMatrix automatically).
 // ============================================================
 
 attribute vec4 at_tmc0;   // position in MODEL-VIEW space (no camera matrix needed!)
