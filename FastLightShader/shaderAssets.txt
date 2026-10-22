@@ -1,0 +1,10 @@
+# ============================================================
+#  FastLight Shader - Ultra Optimized Lighting for Minecraft
+#  Target: OptiFine & Sodium/Iris (Java Edition)
+#  Priority: ZERO noticeable FPS loss. Pure fragment-lighting
+#  pipeline: no shadow maps, no post passes, no extra buffers.
+# ============================================================
+
+# FastLight uses NO custom textures, NO shadow maps and NO resource packs.
+# Everything is computed from vanilla geometry data in a single pass,
+# which is what keeps the FPS impact effectively at zero.
